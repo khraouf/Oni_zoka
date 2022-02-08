@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section start -->
+    <div class="hero">
+        <div class="header">
+            <a class="logo"> RAOuf</a>
+            <nav class="links">
+                <ul>
+                    <li><a href="">sharapova</a></li>
+                    <li><a href="">sharapova</a></li>
+                    <li><a href="">sharapova</a></li>
+                    <li><a href="">sharapova</a></li>
+                    <i id="icon" class="fas fa-volume-off"></i>
+                </ul>
+            </nav>
+            <a><i class="fa-solid fa-moon" id="moon"></i></a>
+        </div>
+        
+        <div class="row">
+            <div class="col-1">
+                <h2>my name is <br>
+                    <nav>
+                        <li><span>Mohamed   a</span></li>
+                        <li><span>Touami  a</span></li>
+                        <li><span>OniZuka  a</span></li>
+                    </nav>
+                </h2>
+                <h3>If you want to buy this Guy</h3>
+                <p>Click "BUY NOW"</p>
+                <h4>$106.106</h4>
+                <button type="button">Buy now</button>
+            </div>
+            <div class="col-2">  
+                <img src="./images/254088323_639621947400686_44315579458136016_n.jpg" alt="">
+                <div class="ayi"></div>
+            </div>
+           
+        </div>
+    </div>
+    <audio id="audio">
+        <source src="./music/Bené - 06 (Clip officiel).mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- Header section End -->
+    <script>
+        var audio = document.getElementById('audio')
+        var icon = document.getElementById('icon')
+
+        icon.onclick = function(){
+            if(audio.paused){
+                audio.play();
+                icon.className = "fas fa-volume-up"
+            }else {
+                audio.pause();
+                icon.className = "fas fa-volume-off"
+            }
+        }
+        let themetogler = document.getElementById('moon')
+        themetogler.onclick = () => {
+            themetogler.classList.toggle('fa-sun')
+            if (themetogler.classList.contains('fa-sun')){
+                document.body.classList.add('active')}
+                else{
+                document.body.classList.remove('active')}
+        }
+    </script>
+</body>
+</html>
+
+
+
+ <!-- <div class="social-liks">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+            </div> -->
